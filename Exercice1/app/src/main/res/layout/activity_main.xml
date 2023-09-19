@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vos revenus Mensuels"
+                android:textColor="#008000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:layout_margin="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salaire mensuel (avant impôt)" />
+
+            <EditText
+                android:id="@+id/txt_salaire_mensuel"
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:layout_margin="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pension alimentaire reçue"/>
+
+            <EditText
+                android:id="@+id/txt_pension_alimentaire"
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:layout_margin="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autres revenus mensuels"/>
+
+            <EditText
+                android:id="@+id/txt_autres_revenus"
+                android:layout_width="209dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Total des revenus mensuels"
+                android:textColor="#663300"/>
+
+            <EditText
+                android:id="@+id/txt_total_mensuel"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"
+                android:enabled="false"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vos payments de remboursement"
+                android:textColor="#008000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="Paiement hypothecaire" />
+
+            <EditText
+                android:id="@+id/txt_Payment_Hypo"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:inputType="text"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="Paiement mensuel d'un pret \n automobile" />
+
+            <EditText
+                android:id="@+id/txt_Payment_Auto"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="Paiement mensuel d'un pret \n personnels" />
+
+            <EditText
+                android:id="@+id/txt_Payment_Perso"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="Paiement mensuel du solde \n de la carte de credit" />
+
+            <EditText
+                android:id="@+id/txt_Payment_Credit_Card"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="Paiement mensuel d'un pret \n etudiant" />
+
+            <EditText
+                android:id="@+id/txt_Payment_Etudiant"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Paiement mensuel divers" />
+
+            <EditText
+                android:id="@+id/txt_Payment_Divers"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnCalculer"
+                android:text="Calculer les Revenues"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Totals des paiments "
+                android:textColor="#663300"/>
+
+            <EditText
+                android:id="@+id/txt_total_payment"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"
+                android:enabled="false"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Ratio d'endettement"
+                android:textColor="#663300"/>
+
+            <EditText
+                android:id="@+id/txt_Ratio"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:inputType="text"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+</android.widget.RelativeLayout>
